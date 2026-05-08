@@ -2,7 +2,7 @@
 
 网上其实已经有一些功能差不多的脚本了，不过它们都是一些我不太信任的人做的，而且还把代码隐藏了。另外，那些脚本用起来也都挺麻烦的。
 
-这个脚本你只需要下载 AutoHotKey 和 [releases](https://github.com/JustDakoo/NTE-AutoFish-NevernessToEverness/releases/tag/script) 里的脚本文件，右键选择“以管理员身份运行”，然后按 F7 就行了。就是这么简单。
+这个脚本你只需要下载 [AutoHotKey](https://www.autohotkey.com) 和 [releases](https://github.com/JustDakoo/NTE-AutoFish-NevernessToEverness/releases/tag/script) 里的脚本文件，右键选择“以管理员身份运行”，然后按 F7 就行了。就是这么简单。
 
 当你进入“按 F 钓鱼”的界面后，需要按一次 F7 来开启脚本。
 
