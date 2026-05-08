@@ -13,3 +13,4 @@ Keep in mind, if the UI is not set to default and/or you have changed the resolu
 
 I don't intend to fix or improve it anymore, if you feel like doing so, feel free to do it!
 
+For some reason the golden line likes to stay on the left side of the moving bar, so far it has catched all the fish and never missed one, so I don't see it as a problem, if it bothers you, it should be easy to fix, I'm not a pro when it comes to coding, I just wanted a simple script that did the boring stuff for me XD
