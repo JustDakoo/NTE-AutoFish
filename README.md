@@ -1,4 +1,7 @@
 # NTE - AutoFish - Neverness To Everness
+
+[Español](https://github.com/JustDakoo/NTE-AutoFish-NevernessToEverness/blob/main/READMEes.md) | [中文](https://github.com/JustDakoo/NTE-AutoFish-NevernessToEverness/blob/main/READMEch.md)
+
 This is a script I made to be able to AutoFish on Neverness to Everness.
 
 There's a few scripts out there that do pretty much the same, but they are made by people I don't trust and that hide the code, also, they all are hard to get them started.
