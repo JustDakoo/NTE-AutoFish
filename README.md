@@ -3,9 +3,7 @@ This is a script I made to be able to AutoFish on Neverness to Everness.
 
 There's a few scripts out there that do pretty much the same, but they are made by people I don't trust and that hide the code, also, they all are hard to get them started.
 
-For this script you only need to download AutoHotKey and the script, right click, Run as Administrator, press F7. That easy.
-
-It runs on AutoHotKey.
+For this script you only need to download AutoHotKey and the script found on ![releases]([https://img.shields.io/github/v/tag/username/repo](https://github.com/JustDakoo/NTE-AutoFish-NevernessToEverness/releases/tag/script), right click, Run as Administrator, press F7. That easy.
 
 You have to toggle it with F7 once you are on the "Press F" to fish.
 
