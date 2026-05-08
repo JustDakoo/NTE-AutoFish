@@ -3,7 +3,7 @@ Este es un script que hice para poder pescar automáticamente en Neverness to Ev
 
 Hay algunos scripts por ahí que hacen prácticamente lo mismo, pero están hechos por gente en la que no confío y además ocultan el código. También son bastante difíciles de hacer funcionar.
 
-Para este script solo necesitas descargar AutoHotKey y el script que está en la sección de [releases](https://github.com/JustDakoo/NTE-AutoFish-NevernessToEverness/releases/tag/script), hacer clic derecho, “Ejecutar como administrador” y pulsar F7. Así de fácil.
+Para este script solo necesitas descargar [AutoHotKey](https://www.autohotkey.com) y el script que está en la sección de [releases](https://github.com/JustDakoo/NTE-AutoFish-NevernessToEverness/releases/tag/script), hacer clic derecho, “Ejecutar como administrador” y pulsar F7. Así de fácil.
 
 Tienes que activarlo con F7 una vez estés en la pantalla de “Pulsa F” para pescar.
 
