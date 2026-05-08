@@ -1,0 +1,115 @@
+﻿#SingleInstance Force
+#Persistent
+#UseHook
+#InstallKeybdHook
+SetBatchLines, -1
+CoordMode, Pixel, Screen
+
+toggle := false
+
+searchLeft := 607
+searchTop := 55
+searchRight := 1316
+searchBottom := 95
+
+greenColor := 0x30D7B5
+yellowColor := 0xFEF59D
+
+variation := 10
+deadzone := 15
+
+mode := "INIT"
+noFishFrames := 0
+unstuckToggle := false
+lastState := ""
+
+
+F7::
+toggle := !toggle
+
+if (toggle) {
+    ToolTip BOT ENABLED
+    SetTimer, MainLoop, 20
+} else {
+    ToolTip BOT DISABLED
+    SetTimer, MainLoop, Off
+    Send {A up}{D up}
+    mode := "INIT"
+}
+SetTimer, RemoveTip, -1000
+return
+
+RemoveTip:
+ToolTip
+return
+
+MainLoop:
+
+if (mode = "INIT") {
+    Send {F}
+    Sleep 120
+    Send {F}
+    mode := "FISHING"
+    noFishFrames := 0
+    return
+}
+
+if (mode = "FISHING") {
+
+    PixelSearch, gx, gy, searchLeft, searchTop, searchRight, searchBottom, greenColor, variation, RGB Fast
+    greenFound := !ErrorLevel
+
+    if (greenFound) {
+        PixelSearch, gx2, gy2, gx+38, searchTop, searchRight, searchBottom, greenColor, variation, RGB Fast
+        if (ErrorLevel)
+            gx2 := gx
+
+        greenCenter := (gx + gx2) / 2
+    }
+
+    PixelSearch, yx, yy, searchLeft, searchTop, searchRight, searchBottom, yellowColor, variation, RGB Fast
+    yellowFound := !ErrorLevel
+
+    if (greenFound && yellowFound) {
+
+        noFishFrames := 0
+        unstuckToggle := false
+
+        diff := yx - greenCenter
+
+        if (diff < -deadzone) {
+            Send {A up}
+            Send {D down}
+        }
+        else if (diff > deadzone) {
+            Send {D up}
+            Send {A down}
+        }
+        else {
+            Send {A down}{D down}
+        }
+
+    }
+    else {
+
+        Send {A up}{D up}
+
+        noFishFrames++
+
+        if (noFishFrames > 20) {
+
+            if (!unstuckToggle) {
+                Send {F}
+                unstuckToggle := true
+            } else {
+                Click
+                unstuckToggle := false
+            }
+
+            noFishFrames := 0
+        }
+    }
+
+}
+
+return
